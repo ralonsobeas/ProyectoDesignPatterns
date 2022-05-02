@@ -10,12 +10,15 @@ import com.utad.designpatterns.enemigos.estrategias.EnemigoStrategy;
  */
 public abstract class Enemigo {
 	
+	//Atributo enemigo
 	private float fuerza;
 	private float resistencia;
 	private float agilidad;
 	
-	private EnemigoStrategy estrategia;
+	//Estrategia del enemigo
+	private EnemigoStrategy estrategia; //Composición por agregación
 	
+	//Se deja por implementar para que cada enemmigo haga sus ataques o defensas
 	public abstract float ataque();
 	public abstract void defensa();
 	
@@ -34,6 +37,7 @@ public abstract class Enemigo {
 		
 	}
 
+	//Getters y setters 
 	public float getFuerza() {
 		return fuerza;
 	}
