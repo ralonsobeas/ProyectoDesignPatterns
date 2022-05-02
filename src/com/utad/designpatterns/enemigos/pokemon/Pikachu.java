@@ -1,4 +1,6 @@
-package com.utad.designpatterns.enemigos;
+package com.utad.designpatterns.enemigos.pokemon;
+
+import com.utad.designpatterns.enemigos.Enemigo;
 
 /**
  * Enemigo Picachu
