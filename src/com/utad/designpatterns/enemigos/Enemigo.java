@@ -1,5 +1,7 @@
 package com.utad.designpatterns.enemigos;
 
+import com.utad.designpatterns.enemigos.estrategias.EnemigoStrategy;
+
 /**
  * 
  * Clase enemigo que utiliza el patrón Template Method para implementar el algoritmo para decidir la siguiente acción a realizar.

@@ -1,4 +1,4 @@
-package com.utad.designpatterns.enemigos;
+package com.utad.designpatterns.enemigos.estrategias;
 
 /**
  * Clase estrategia para enemigo agresivo
