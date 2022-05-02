@@ -8,7 +8,7 @@ package com.utad.designpatterns.enemigos;
 public class AgresivoStrategy implements EnemigoStrategy{
 	
 	public float probabilidadAtaque = 0.6f;
-	public float fuerza = 0.6f;
+	public float fuerza = 2.5f;
 	public float agilidad = 0.3f;
 
 	public float getProbabilidadAtaque() {

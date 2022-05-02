@@ -15,8 +15,20 @@ public abstract class Enemigo {
 	private EnemigoStrategy estrategia;
 	
 	public abstract float ataque();
+	public abstract void defensa();
 	
-	public void siguienteMovimiento() {
+	/**
+	 * Elegir siguiente movimiento
+	 */
+	public Movimiento siguienteMovimiento() {
+		
+		float random = (float)(Math.random());
+		
+		if(random<=this.estrategia.getProbabilidadAtaque()) {
+			return Movimiento.ATACAR;
+		}
+		
+		return Movimiento.DEFENDER;
 		
 	}
 
