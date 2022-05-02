@@ -8,5 +8,6 @@ public interface EnemigoStrategy {
 	public float getFuerza();
 	//Si es agresivo tiene más agilidad
 	public float getAgilidad();
+	
 
 }
