@@ -15,13 +15,14 @@ public class PiplupNivel1 extends Pokemon{
 		this.setNivel(Nivel.Nivel1);
 	}
 
-	public String ataque() {
+	public float ataque() {
 		// TODO Auto-generated method stub
-		return "Pistola Agua";
+		//return "Pistola Agua";
+		return 0;
 	}
 
-	public String defensa() {
+	public float defensa() {
 		// TODO Auto-generated method stub
-		return "";
+		return 0;
 	}
 }

@@ -15,14 +15,15 @@ public class RaichuNivel3 extends Pokemon{
 		this.setNivel(Nivel.Nivel3);
 	}
 
-	public String ataque() {
+	public float ataque() {
 		// TODO Auto-generated method stub
-		return "Trueno";
+		//return "Trueno";
+		return 0;
 	}
 
-	public String defensa() {
+	public float defensa() {
 		// TODO Auto-generated method stub
-		return "";
+		return 0;
 	}
 
 }

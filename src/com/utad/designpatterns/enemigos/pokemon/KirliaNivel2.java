@@ -16,13 +16,14 @@ public class KirliaNivel2 extends Pokemon{
 	}
 
 
-	public String ataque() {
+	public float ataque() {
 		// TODO Auto-generated method stub
-		return "Psiquico";
+		//return "Psiquico";
+		return 0;
 	}
 
-	public String defensa() {
+	public float defensa() {
 		// TODO Auto-generated method stub
-		return "";
+		return 0;
 	}
 }

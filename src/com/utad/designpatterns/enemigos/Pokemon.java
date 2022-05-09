@@ -24,8 +24,8 @@ public abstract class Pokemon implements PokemonInterfaz {
 	private EnemigoStrategy estrategia; //Composición por agregación
 	
 	//Se deja por implementar para que cada enemmigo haga sus ataques o defensas
-	public abstract String ataque();
-	public abstract String defensa();
+	public abstract float ataque();
+	public abstract float defensa();
 	
 	/**
 	 * Elegir siguiente movimiento final?
