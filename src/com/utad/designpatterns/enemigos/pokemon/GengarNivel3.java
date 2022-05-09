@@ -1,64 +1,28 @@
 package com.utad.designpatterns.enemigos.pokemon;
 
 import com.utad.designpatterns.enemigos.Pokemon;
+import com.utad.designpatterns.enemigos.PokemonInterfaz;
 import com.utad.designpatterns.mundos.Nivel;
 
-public class GengarNivel3 implements Pokemon{
-	private String name;
-	private Integer fuerza;
-	private Integer resistencia;
-	private Integer agilidad;
-	private Integer vidas;
-	
-	public GengarNivel3(String name, Integer fuerza, Integer resistencia, Integer agilidad, Integer vidas) {
+public class GengarNivel3 extends Pokemon{
+	public GengarNivel3(String nombre, Integer fuerza, Integer resistencia, Integer agilidad, Integer vidas) {
 		super();
-		this.name = name;
-		this.fuerza = fuerza  * Nivel.Nivel3.getMultiplicador();
-		this.resistencia = resistencia  * Nivel.Nivel3.getMultiplicador();
-		this.agilidad = agilidad  * Nivel.Nivel3.getMultiplicador();
-		this.vidas = vidas  * Nivel.Nivel3.getMultiplicador();
-	}
-	
-	@Override
-	public String getName() {
-		// TODO Auto-generated method stub
-		return name;
+		this.setNombre(nombre);
+		this.setFuerza(fuerza  * Nivel.Nivel3.getMultiplicador());
+		this.setResistencia(resistencia  * Nivel.Nivel3.getMultiplicador());
+		this.setAgilidad(agilidad  * Nivel.Nivel3.getMultiplicador());
+		this.setVidas(vidas  * Nivel.Nivel3.getMultiplicador());
+		this.setNivel(Nivel.Nivel3);
 	}
 
-	@Override
-	public Integer getFuerza() {
-		// TODO Auto-generated method stub
-		return fuerza;
-	}
-
-	@Override
-	public Integer getResistencia() {
-		// TODO Auto-generated method stub
-		return resistencia;
-	}
-
-	@Override
-	public Integer getAgilidad() {
-		// TODO Auto-generated method stub
-		return agilidad;
-	}
-
-	@Override
-	public Integer getVidas() {
-		// TODO Auto-generated method stub
-		return vidas;
-	}
-
-	@Override
-	public Nivel getNivel() {
-		// TODO Auto-generated method stub
-		return Nivel.Nivel3;
-	}
-
-	@Override
-	public String getAtaqueEspecial() {
+	public String ataque() {
 		// TODO Auto-generated method stub
 		return "Garra Umbria";
+	}
+
+	public String defensa() {
+		// TODO Auto-generated method stub
+		return "";
 	}
 
 }

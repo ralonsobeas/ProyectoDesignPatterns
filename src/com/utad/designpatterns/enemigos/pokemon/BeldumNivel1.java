@@ -1,69 +1,30 @@
 package com.utad.designpatterns.enemigos.pokemon;
 
 import com.utad.designpatterns.enemigos.Pokemon;
+import com.utad.designpatterns.enemigos.PokemonInterfaz;
 import com.utad.designpatterns.mundos.Nivel;
 
-public class BeldumNivel1 implements Pokemon {
-	private String name;
-	private Integer fuerza;
-	private Integer resistencia;
-	private Integer agilidad;
-	private Integer vidas;
+public class BeldumNivel1 extends Pokemon{
 	
-	public BeldumNivel1(String name, Integer fuerza, Integer resistencia, Integer agilidad, Integer vidas) {
+	public BeldumNivel1(String nombre, Integer fuerza, Integer resistencia, Integer agilidad, Integer vidas) {
 		super();
-		this.name = name;
-		this.fuerza = fuerza  * Nivel.Nivel1.getMultiplicador();
-		this.resistencia = resistencia  * Nivel.Nivel1.getMultiplicador();
-		this.agilidad  = agilidad  * Nivel.Nivel1.getMultiplicador();
-		this.vidas = vidas  * Nivel.Nivel1.getMultiplicador();
-	}
-	
-
-	@Override
-	public String getName() {
-		return name;
+		this.setNombre(nombre);
+		this.setFuerza(fuerza  * Nivel.Nivel1.getMultiplicador());
+		this.setResistencia(resistencia  * Nivel.Nivel1.getMultiplicador());
+		this.setAgilidad(agilidad  * Nivel.Nivel1.getMultiplicador());
+		this.setVidas(vidas  * Nivel.Nivel1.getMultiplicador());
+		this.setNivel(Nivel.Nivel1);
 	}
 
-
-	@Override
-	public Integer getFuerza() {
-		// TODO Auto-generated method stub
-		return fuerza;
-	}
-
-	@Override
-	public Integer getResistencia() {
-		// TODO Auto-generated method stub
-		return resistencia;
-	}
-
-	@Override
-	public Integer getAgilidad() {
-		// TODO Auto-generated method stub
-		return agilidad;
-	}
-
-	@Override
-	public Integer getVidas() {
-		// TODO Auto-generated method stub
-		return vidas;
-	}
-
-	@Override
-	public Nivel getNivel() {
-		// TODO Auto-generated method stub
-		return Nivel.Nivel1;
-	}
-
-	
-	public String getAtaqueEspecial() {
+	public String ataque() {
 		// TODO Auto-generated method stub
 		return "Cabezazo Zen";
 	}
-	
-	public String getDefensaEspecial() {
+
+	public String defensa() {
 		// TODO Auto-generated method stub
-		return null;
+		return "";
 	}
+
+	
 }

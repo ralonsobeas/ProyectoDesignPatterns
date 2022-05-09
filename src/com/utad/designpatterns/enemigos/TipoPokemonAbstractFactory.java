@@ -1,9 +1,9 @@
 package com.utad.designpatterns.enemigos;
 
 public interface TipoPokemonAbstractFactory{
-	public Pokemon createPiplup();
-	public Pokemon createBeldum();
-	public Pokemon createPichu();
-	public Pokemon createRalts();
-	public Pokemon createGastly();
+	public PokemonInterfaz createPiplup();
+	public PokemonInterfaz createBeldum();
+	public PokemonInterfaz createPichu();
+	public PokemonInterfaz createRalts();
+	public PokemonInterfaz createGastly();
 }

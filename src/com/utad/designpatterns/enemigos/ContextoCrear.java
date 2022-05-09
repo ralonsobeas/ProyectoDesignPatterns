@@ -18,19 +18,19 @@ public class ContextoCrear {
 	public void setTipoPokemonAbstractFactory(TipoPokemonAbstractFactory tipoPokemonAbstractFactory) {
 		this.tipoPokemonAbstractFactory = tipoPokemonAbstractFactory;
 	}
-	public Pokemon createPiplup() {
+	public PokemonInterfaz createPiplup() {
 		return this.tipoPokemonAbstractFactory.createPiplup();
 	}
-	public Pokemon createBeldum() {
+	public PokemonInterfaz createBeldum() {
 		return this.tipoPokemonAbstractFactory.createBeldum();
 	}
-	public Pokemon createPichu() {
+	public PokemonInterfaz createPichu() {
 		return this.tipoPokemonAbstractFactory.createPichu();
 	}
-	public Pokemon createGastly() {
+	public PokemonInterfaz createGastly() {
 		return this.tipoPokemonAbstractFactory.createGastly();
 	}
-	public Pokemon createRalts() {
+	public PokemonInterfaz createRalts() {
 		return this.tipoPokemonAbstractFactory.createRalts();
 	}
 }
