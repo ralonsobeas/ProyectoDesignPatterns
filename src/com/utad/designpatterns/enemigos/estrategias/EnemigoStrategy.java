@@ -1,5 +1,10 @@
 package com.utad.designpatterns.enemigos.estrategias;
 
+/**
+ * Interfaz para las estrategias
+ * @author rodri
+ *
+ */
 public interface EnemigoStrategy {
 	
 	//Probabilidad de ataque si es pasivo (menos probabilidad) o agresivo (más)

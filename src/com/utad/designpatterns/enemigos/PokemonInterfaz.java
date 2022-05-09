@@ -2,6 +2,11 @@ package com.utad.designpatterns.enemigos;
 
 import com.utad.designpatterns.mundos.Nivel;
 
+/**
+ * Interfaz para la clase abstracta Pokemon
+ * @author rodri
+ *
+ */
 public interface PokemonInterfaz {
 	
 	public float ataque();
