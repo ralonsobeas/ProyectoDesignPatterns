@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.utad.designpatterns.enemigos.pokemon"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.utad.designpatterns"},{"l":"com.utad.designpatterns.contoladores"},{"l":"com.utad.designpatterns.enemigos"},{"l":"com.utad.designpatterns.enemigos.estrategias"},{"l":"com.utad.designpatterns.enemigos.pokemon"},{"l":"com.utad.designpatterns.jugador"},{"l":"com.utad.designpatterns.mundos"}];updateSearchResults();

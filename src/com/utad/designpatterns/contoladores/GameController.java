@@ -10,6 +10,8 @@ import java.util.Scanner;
  *
  */
 public class GameController {
+	
+	
 	private Jugador jugador = new Jugador();
 	//private Calculadora calculadora = new Calculadora();
 		//mundoEnElQueEsta
@@ -17,7 +19,21 @@ public class GameController {
 	private ContextoCrear crear = ContextoCrear.getInstance(); 
 	private int contadorPokemon = 0;
 	
-		public Pokemon getEnemigo() {
+	//Patrón Singleton
+	private static GameController gameController;
+	private GameController(){} //privado
+	
+	public static GameController getInstance(){
+		
+		if (gameController==null){
+			gameController = new GameController();
+		}
+		return gameController;
+		
+	}
+	
+	
+	public Pokemon getEnemigo() {
 		return enemigo;
 	}
 

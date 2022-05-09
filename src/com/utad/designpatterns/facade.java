@@ -2,7 +2,7 @@ package com.utad.designpatterns;
 import com.utad.designpatterns.contoladores.*;
 
 public class facade implements facade_Interfaz{
-private GameController controler = new GameController();
+	private GameController controler = GameController.getInstance();
 	
 	@Override
 	public void play() {
