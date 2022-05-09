@@ -3,6 +3,11 @@ package com.utad.designpatterns.enemigos;
 import com.utad.designpatterns.mundos.Nivel;
 
 public interface PokemonInterfaz {
+	
+	public float ataque();
+	public float defensa();
+	public Movimiento siguienteMovimiento();
+	
 	public String getNombre();
 	public Integer getFuerza();
 	public void setFuerza(Integer fuerza);
