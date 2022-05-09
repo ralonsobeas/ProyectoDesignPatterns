@@ -4,6 +4,11 @@ import com.utad.designpatterns.enemigos.Pokemon;
 import com.utad.designpatterns.enemigos.PokemonInterfaz;
 import com.utad.designpatterns.mundos.Nivel;
 
+/**
+ * Esta clase viende de Ralts(Nivel1) y Kirlia(Nivel2)
+ * @author rodri
+ *
+ */
 public class GardevoirNivel3 extends Pokemon{
 	
 	public GardevoirNivel3(String nombre, Integer fuerza, Integer resistencia, Integer agilidad, Integer vidas) {

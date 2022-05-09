@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.utad.designpatterns.enemigos.pokemon","l":"BeldumNivel1"}];updateSearchResults();
