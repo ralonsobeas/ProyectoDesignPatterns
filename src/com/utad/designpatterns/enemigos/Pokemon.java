@@ -1,5 +1,6 @@
 package com.utad.designpatterns.enemigos;
 
+import com.utad.designpatterns.enemigos.estrategias.DefensivoStrategy;
 import com.utad.designpatterns.enemigos.estrategias.EnemigoStrategy;
 import com.utad.designpatterns.mundos.Nivel;
 
@@ -13,15 +14,24 @@ public abstract class Pokemon implements PokemonInterfaz {
 	
 	//Atributo enemigo
 	private String nombre;
-	private Integer fuerza;
-	private Integer resistencia;
-	private Integer agilidad;
-	private Integer vidas;
+	private float fuerza;
+	private float resistencia;
+	private float agilidad;
+	private float vidas;
 	private Nivel nivel;
+
+	public Pokemon(String nombre, Integer fuerza, Integer resistencia, Integer agilidad, Integer vidas, Nivel nivel) {
+		this.setNombre(nombre);
+		this.setFuerza(fuerza  * nivel.getMultiplicador()* this.getEstrategia().getFuerza());
+		this.setResistencia(resistencia  * nivel.getMultiplicador());
+		this.setAgilidad(agilidad  * nivel.getMultiplicador() * this.getEstrategia().getAgilidad() );
+		this.setVidas(vidas  * nivel.getMultiplicador());
+		this.setNivel(nivel);
+	}
 
 	
 	//Estrategia del enemigo
-	private EnemigoStrategy estrategia; //Composición por agregación
+	private EnemigoStrategy estrategia = new DefensivoStrategy();; //Composición por agregación
 	
 	//Se deja por implementar para que cada enemmigo haga sus ataques o defensas
 	public abstract float ataque();
@@ -51,27 +61,27 @@ public abstract class Pokemon implements PokemonInterfaz {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public Integer getFuerza() {
+	public float getFuerza() {
 		return fuerza;
 	}
 
-	public void setFuerza(Integer fuerza) {
+	public void setFuerza(float fuerza) {
 		this.fuerza = fuerza;
 	}
 
-	public Integer getResistencia() {
+	public float getResistencia() {
 		return resistencia;
 	}
 
-	public void setResistencia(Integer resistencia) {
+	public void setResistencia(float resistencia) {
 		this.resistencia = resistencia;
 	}
 
-	public Integer getAgilidad() {
+	public float getAgilidad() {
 		return agilidad;
 	}
 
-	public void setAgilidad(Integer agilidad) {
+	public void setAgilidad(float agilidad) {
 		this.agilidad = agilidad;
 	}
 
@@ -82,10 +92,10 @@ public abstract class Pokemon implements PokemonInterfaz {
 	public void setEstrategia(EnemigoStrategy estrategia) {
 		this.estrategia = estrategia;
 	}
-	public Integer getVidas() {
+	public float getVidas() {
 		return vidas;
 	}
-	public void setVidas(Integer vidas) {
+	public void setVidas(float vidas) {
 		this.vidas = vidas;
 	}
 	public Nivel getNivel() {

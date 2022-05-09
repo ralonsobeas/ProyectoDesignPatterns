@@ -14,14 +14,14 @@ public interface PokemonInterfaz {
 	public Movimiento siguienteMovimiento();
 	
 	public String getNombre();
-	public Integer getFuerza();
-	public void setFuerza(Integer fuerza);
-	public Integer getResistencia();
-	public void setResistencia(Integer resistencia);
-	public Integer getAgilidad();
-	public void setAgilidad(Integer agilidad);
-	public Integer getVidas();
-	public void setVidas(Integer vidas);
+	public float getFuerza();
+	public void setFuerza(float fuerza);
+	public float getResistencia();
+	public void setResistencia(float resistencia);
+	public float getAgilidad();
+	public void setAgilidad(float agilidad);
+	public float getVidas();
+	public void setVidas(float vidas);
 	public Nivel getNivel();
 
 	

@@ -11,13 +11,7 @@ import com.utad.designpatterns.mundos.Nivel;
  */
 public class GastlyNivel1 extends Pokemon {
 	public GastlyNivel1(String nombre, Integer fuerza, Integer resistencia, Integer agilidad, Integer vidas) {
-		super();
-		this.setNombre(nombre);
-		this.setFuerza(fuerza  * Nivel.Nivel1.getMultiplicador());
-		this.setResistencia(resistencia  * Nivel.Nivel1.getMultiplicador());
-		this.setAgilidad(agilidad  * Nivel.Nivel1.getMultiplicador());
-		this.setVidas(vidas  * Nivel.Nivel1.getMultiplicador());
-		this.setNivel(Nivel.Nivel1);
+		super(nombre,fuerza,resistencia,agilidad,vidas,Nivel.Nivel1);
 	}
 
 
