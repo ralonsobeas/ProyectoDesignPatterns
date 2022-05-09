@@ -8,8 +8,8 @@ package com.utad.designpatterns;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		//holaaaaaaaaaaaaaaaaaaaa
+		facade_Interfaz facade = new facade();
+		facade.play();
 
 	}
 
