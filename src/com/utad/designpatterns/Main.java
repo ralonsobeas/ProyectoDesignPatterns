@@ -8,7 +8,7 @@ package com.utad.designpatterns;
 public class Main {
 
 	public static void main(String[] args) {
-		facade_Interfaz facade = new facade();
+		Facade_Interfaz facade = new Facade();
 		facade.play();
 
 	}
