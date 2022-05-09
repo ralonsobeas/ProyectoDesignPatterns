@@ -1,13 +1,16 @@
-package Pokemon_Abstract_Factory;
+package com.utad.designpatterns.enemigos.pokemon;
 
-public class EmpoleonNivel3 implements Pokemon {
+import com.utad.designpatterns.enemigos.Pokemon;
+import com.utad.designpatterns.mundos.Nivel;
+
+public class GengarNivel3 implements Pokemon{
 	private String name;
 	private Integer fuerza;
 	private Integer resistencia;
 	private Integer agilidad;
 	private Integer vidas;
 	
-	public EmpoleonNivel3(String name, Integer fuerza, Integer resistencia, Integer agilidad, Integer vidas) {
+	public GengarNivel3(String name, Integer fuerza, Integer resistencia, Integer agilidad, Integer vidas) {
 		super();
 		this.name = name;
 		this.fuerza = fuerza  * Nivel.Nivel3.getMultiplicador();
@@ -21,7 +24,6 @@ public class EmpoleonNivel3 implements Pokemon {
 		// TODO Auto-generated method stub
 		return name;
 	}
-
 
 	@Override
 	public Integer getFuerza() {
@@ -56,7 +58,7 @@ public class EmpoleonNivel3 implements Pokemon {
 	@Override
 	public String getAtaqueEspecial() {
 		// TODO Auto-generated method stub
-		return "Hidrobomba";
+		return "Garra Umbria";
 	}
 
 }

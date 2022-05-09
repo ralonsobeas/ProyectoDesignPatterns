@@ -1,19 +1,22 @@
-package Pokemon_Abstract_Factory;
+package com.utad.designpatterns.enemigos.pokemon;
 
-public class RaichuNivel3 implements Pokemon{
+import com.utad.designpatterns.enemigos.Pokemon;
+import com.utad.designpatterns.mundos.Nivel;
+
+public class MetangNivel2 implements Pokemon{
 	private String name;
 	private Integer fuerza;
 	private Integer resistencia;
 	private Integer agilidad;
 	private Integer vidas;
 	
-	public RaichuNivel3(String name, Integer fuerza, Integer resistencia, Integer agilidad, Integer vidas) {
+	public MetangNivel2(String name, Integer fuerza, Integer resistencia, Integer agilidad, Integer vidas) {
 		super();
 		this.name = name;
-		this.fuerza = fuerza  * Nivel.Nivel3.getMultiplicador();
-		this.resistencia = resistencia  * Nivel.Nivel3.getMultiplicador();
-		this.agilidad = agilidad  * Nivel.Nivel3.getMultiplicador();
-		this.vidas = vidas  * Nivel.Nivel3.getMultiplicador();
+		this.fuerza = fuerza  * Nivel.Nivel2.getMultiplicador();
+		this.resistencia = resistencia  * Nivel.Nivel2.getMultiplicador();
+		this.agilidad = agilidad  * Nivel.Nivel2.getMultiplicador();
+		this.vidas = vidas  * Nivel.Nivel2.getMultiplicador();
 	}
 	
 	@Override
@@ -49,13 +52,13 @@ public class RaichuNivel3 implements Pokemon{
 	@Override
 	public Nivel getNivel() {
 		// TODO Auto-generated method stub
-		return Nivel.Nivel3;
+		return Nivel.Nivel2;
 	}
 
 	@Override
 	public String getAtaqueEspecial() {
 		// TODO Auto-generated method stub
-		return "Trueno";
+		return "Cabezazo Zen";
 	}
 
 }

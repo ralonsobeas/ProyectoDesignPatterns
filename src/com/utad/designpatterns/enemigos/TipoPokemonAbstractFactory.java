@@ -1,4 +1,4 @@
-package Pokemon_Abstract_Factory;
+package com.utad.designpatterns.enemigos;
 
 public interface TipoPokemonAbstractFactory{
 	public Pokemon createPiplup();

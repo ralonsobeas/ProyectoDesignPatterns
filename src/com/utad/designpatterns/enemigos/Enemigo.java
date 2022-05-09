@@ -23,7 +23,7 @@ public abstract class Enemigo {
 	public abstract void defensa();
 	
 	/**
-	 * Elegir siguiente movimiento
+	 * Elegir siguiente movimiento final?
 	 */
 	public Movimiento siguienteMovimiento() {
 		

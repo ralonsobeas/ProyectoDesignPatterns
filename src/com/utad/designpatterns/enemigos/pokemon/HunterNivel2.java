@@ -1,25 +1,30 @@
-package Pokemon_Abstract_Factory;
+package com.utad.designpatterns.enemigos.pokemon;
 
-public class GastlyNivel1 implements Pokemon {
+import com.utad.designpatterns.enemigos.Pokemon;
+import com.utad.designpatterns.mundos.Nivel;
+
+public class HunterNivel2 implements Pokemon{
 	private String name;
 	private Integer fuerza;
 	private Integer resistencia;
 	private Integer agilidad;
 	private Integer vidas;
-	public GastlyNivel1(String name, Integer fuerza, Integer resistencia, Integer agilidad, Integer vidas) {
+	
+	public HunterNivel2(String name, Integer fuerza, Integer resistencia, Integer agilidad, Integer vidas) {
 		super();
 		this.name = name;
-		this.fuerza = fuerza  * Nivel.Nivel1.getMultiplicador();
-		this.resistencia = resistencia  * Nivel.Nivel1.getMultiplicador();
-		this.agilidad  = agilidad  * Nivel.Nivel1.getMultiplicador();
-		this.vidas = vidas  * Nivel.Nivel1.getMultiplicador();
+		this.fuerza = fuerza  * Nivel.Nivel2.getMultiplicador();
+		this.resistencia = resistencia  * Nivel.Nivel2.getMultiplicador();
+		this.agilidad = agilidad  * Nivel.Nivel2.getMultiplicador();
+		this.vidas = vidas  * Nivel.Nivel2.getMultiplicador();
 	}
 	
-
 	@Override
 	public String getName() {
+		// TODO Auto-generated method stub
 		return name;
 	}
+
 
 	@Override
 	public Integer getFuerza() {
@@ -48,17 +53,14 @@ public class GastlyNivel1 implements Pokemon {
 	@Override
 	public Nivel getNivel() {
 		// TODO Auto-generated method stub
-		return Nivel.Nivel1;
+		return Nivel.Nivel2;
 	}
 
-	
+	@Override
 	public String getAtaqueEspecial() {
 		// TODO Auto-generated method stub
-		return "Persecucion";
+		return "Bola Sombra";
 	}
-	
-	public String getDefensaEspecial() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+
+
 }

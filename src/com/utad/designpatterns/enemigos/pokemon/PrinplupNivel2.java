@@ -1,13 +1,16 @@
-package Pokemon_Abstract_Factory;
+package com.utad.designpatterns.enemigos.pokemon;
 
-public class KirliaNivel2 implements Pokemon{
-	private String name;
+import com.utad.designpatterns.enemigos.Pokemon;
+import com.utad.designpatterns.mundos.Nivel;
+
+public class PrinplupNivel2 implements Pokemon{
+	private String name; 
 	private Integer fuerza;
 	private Integer resistencia;
 	private Integer agilidad;
 	private Integer vidas;
 	
-	public KirliaNivel2(String name, Integer fuerza, Integer resistencia, Integer agilidad, Integer vidas) {
+	public PrinplupNivel2(String name, Integer fuerza, Integer resistencia, Integer agilidad, Integer vidas) {
 		super();
 		this.name = name;
 		this.fuerza = fuerza  * Nivel.Nivel2.getMultiplicador();
@@ -21,7 +24,6 @@ public class KirliaNivel2 implements Pokemon{
 		// TODO Auto-generated method stub
 		return name;
 	}
-
 
 	@Override
 	public Integer getFuerza() {
@@ -56,7 +58,7 @@ public class KirliaNivel2 implements Pokemon{
 	@Override
 	public String getAtaqueEspecial() {
 		// TODO Auto-generated method stub
-		return "Psiquico";
+		return "Rayo burbuja";
 	}
 
 }

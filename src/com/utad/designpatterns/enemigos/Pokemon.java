@@ -1,4 +1,6 @@
-package Pokemon_Abstract_Factory;
+package com.utad.designpatterns.enemigos;
+
+import com.utad.designpatterns.mundos.Nivel;
 
 public interface Pokemon {
 	public String getName();

@@ -1,13 +1,16 @@
-package Pokemon_Abstract_Factory;
+package com.utad.designpatterns.enemigos.pokemon;
 
-public class HunterNivel2 implements Pokemon{
+import com.utad.designpatterns.enemigos.Pokemon;
+import com.utad.designpatterns.mundos.Nivel;
+
+public class PikachuNivel2 implements Pokemon{
 	private String name;
 	private Integer fuerza;
 	private Integer resistencia;
 	private Integer agilidad;
 	private Integer vidas;
 	
-	public HunterNivel2(String name, Integer fuerza, Integer resistencia, Integer agilidad, Integer vidas) {
+	public PikachuNivel2(String name, Integer fuerza, Integer resistencia, Integer agilidad, Integer vidas) {
 		super();
 		this.name = name;
 		this.fuerza = fuerza  * Nivel.Nivel2.getMultiplicador();
@@ -21,7 +24,6 @@ public class HunterNivel2 implements Pokemon{
 		// TODO Auto-generated method stub
 		return name;
 	}
-
 
 	@Override
 	public Integer getFuerza() {
@@ -56,8 +58,7 @@ public class HunterNivel2 implements Pokemon{
 	@Override
 	public String getAtaqueEspecial() {
 		// TODO Auto-generated method stub
-		return "Bola Sombra";
+		return "Rayo";
 	}
-
 
 }

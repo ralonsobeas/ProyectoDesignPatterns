@@ -1,4 +1,12 @@
-package Pokemon_Abstract_Factory;
+package com.utad.designpatterns.mundos;
+
+import com.utad.designpatterns.enemigos.Pokemon;
+import com.utad.designpatterns.enemigos.TipoPokemonAbstractFactory;
+import com.utad.designpatterns.enemigos.pokemon.EmpoleonNivel3;
+import com.utad.designpatterns.enemigos.pokemon.GardevoirNivel3;
+import com.utad.designpatterns.enemigos.pokemon.GengarNivel3;
+import com.utad.designpatterns.enemigos.pokemon.MetagrossNivel3;
+import com.utad.designpatterns.enemigos.pokemon.RaichuNivel3;
 
 public class Nivel3AbstractFactory implements TipoPokemonAbstractFactory{
 	public Nivel3AbstractFactory() {

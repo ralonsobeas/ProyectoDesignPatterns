@@ -1,4 +1,4 @@
-package Pokemon_Abstract_Factory;
+package com.utad.designpatterns.mundos;
 
 public enum Nivel {
 	Nivel1(1),Nivel2(2),Nivel3(3);
