@@ -4,6 +4,11 @@ import com.utad.designpatterns.enemigos.Pokemon;
 import com.utad.designpatterns.enemigos.PokemonInterfaz;
 import com.utad.designpatterns.mundos.Nivel;
 
+/**
+ * Piplup evoluciona a Prinplup (nivel 2 ) Y Empolion (nivel 3)
+ * @author david
+ *
+ */
 public class PiplupNivel1 extends Pokemon{
 	public PiplupNivel1(String nombre, Integer fuerza, Integer resistencia, Integer agilidad, Integer vidas) {
 		super();

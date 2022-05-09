@@ -4,6 +4,11 @@ import com.utad.designpatterns.enemigos.Pokemon;
 import com.utad.designpatterns.enemigos.PokemonInterfaz;
 import com.utad.designpatterns.mundos.Nivel;
 
+/**
+ * Pikachu evoluciona a Raichu(nivel 3)
+ * @author david
+ *
+ */
 public class PikachuNivel2 extends Pokemon{
 	public PikachuNivel2(String nombre, Integer fuerza, Integer resistencia, Integer agilidad, Integer vidas) {
 		super();

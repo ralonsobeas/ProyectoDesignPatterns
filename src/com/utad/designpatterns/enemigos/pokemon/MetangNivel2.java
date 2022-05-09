@@ -4,6 +4,12 @@ import com.utad.designpatterns.enemigos.Pokemon;
 import com.utad.designpatterns.enemigos.PokemonInterfaz;
 import com.utad.designpatterns.mundos.Nivel;
 
+/**
+ * Metang evoluciona a Metagross (nivel 3)
+ * @author david
+ *
+ */
+
 public class MetangNivel2 extends Pokemon{
 	public MetangNivel2(String nombre, Integer fuerza, Integer resistencia, Integer agilidad, Integer vidas) {
 		super();
