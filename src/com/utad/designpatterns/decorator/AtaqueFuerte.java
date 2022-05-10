@@ -12,8 +12,8 @@ public class AtaqueFuerte implements AccionBaseDecorator {
 		return "Ataque Fuerte";
 	}
 
-	public float getDaño() {
-		return this.accionDecorator.getDaño()+1;
+	public float getDanio() {
+		return this.accionDecorator.getDanio()+1;
 	}
 
 	public float getDefensa() {

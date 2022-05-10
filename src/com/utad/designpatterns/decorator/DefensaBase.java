@@ -12,8 +12,8 @@ public class DefensaBase implements AccionBaseDecorator{
 		return "Defensa Base";
 	}
 
-	public float getDaño() {
-		return this.accionDecorator.getDaño();
+	public float getDanio() {
+		return this.accionDecorator.getDanio();
 	}
 
 	public float getDefensa() {
