@@ -1,5 +1,10 @@
 package com.utad.designpatterns.decorator;
 
+/**
+ * Clase patrón decorador para un ataque fuerte
+ * @author rodri
+ *
+ */
 public class AtaqueFuerte implements AccionBaseDecorator {
 
 	private AccionDecorator accionDecorator;
@@ -13,11 +18,11 @@ public class AtaqueFuerte implements AccionBaseDecorator {
 	}
 
 	public float getDanio() {
-		return this.accionDecorator.getDanio()+1;
+		return this.accionDecorator.getDanio()+4;
 	}
 
 	public float getDefensa() {
-		return this.accionDecorator.getDefensa();
+		return 0;
 	}
 
 	public AccionDecorator getAccionDecorator() {

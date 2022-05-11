@@ -1,5 +1,10 @@
 package com.utad.designpatterns.enemigos.estados;
 
+/**
+ * Enumerado con los diferentes estados de un pokemon
+ * @author rodri
+ *
+ */
 public enum Estado {
-	ATAQUE, DEFENSA, MUERTO;
+	ACTIVO, PARALIZADO, HERIDO;
 }

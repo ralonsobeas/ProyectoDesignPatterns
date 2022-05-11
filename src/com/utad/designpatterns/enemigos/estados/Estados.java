@@ -1,8 +1,13 @@
 package com.utad.designpatterns.enemigos.estados;
 
-//Extesión de la interfaz LibraryLoanProcess
+/**
+ * Interfaz para los diferentes estados
+ * @author rodri
+ *
+ */
 public interface Estados extends Procesar {
-	public void cambiaEstadoAtaque();
-	public void cambiaEstadoDefensa();
-	public void cambiaEstadoMuerto();
+	public void cambiaEstadoActivo();
+	public void cambiaEstadoParalizado();
+	public void cambiaEstadoHerido();
+	
 }

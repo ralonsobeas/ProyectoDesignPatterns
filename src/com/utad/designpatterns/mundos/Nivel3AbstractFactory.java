@@ -8,6 +8,11 @@ import com.utad.designpatterns.enemigos.pokemon.GengarNivel3;
 import com.utad.designpatterns.enemigos.pokemon.MetagrossNivel3;
 import com.utad.designpatterns.enemigos.pokemon.RaichuNivel3;
 
+/**
+ * Abstract factory nivel 3
+ * @author rodri
+ *
+ */
 public class Nivel3AbstractFactory implements TipoPokemonAbstractFactory{
 	public Nivel3AbstractFactory() {
 		super();

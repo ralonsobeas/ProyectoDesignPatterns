@@ -16,13 +16,14 @@ public class GastlyNivel1 extends Pokemon {
 
 
 	public float ataque() {
-		// TODO Auto-generated method stub
-		//return "Persecucion";
-		return 0;
+		System.out.println("-- Ataque --"); 
+		System.out.println("Persecucion"); 
+		return getFuerza()*this.getEstrategia().getFuerza();
 	}
 
 	public float defensa() {
-		// TODO Auto-generated method stub
-		return 0;
+		System.out.println("-- Defensa --");
+		System.out.println("Huida"); 
+		return -2;
 	}
 }

@@ -2,6 +2,11 @@ package com.utad.designpatterns.enemigos;
 
 import com.utad.designpatterns.mundos.Nivel1AbstractFactory;
 
+/**
+ * Clase contexto para crear pokemons
+ * @author rodri
+ *
+ */
 public class ContextoCrear {
 	private TipoPokemonAbstractFactory tipoPokemonAbstractFactory;
 	private static ContextoCrear contextoCrear = new ContextoCrear(new Nivel1AbstractFactory());

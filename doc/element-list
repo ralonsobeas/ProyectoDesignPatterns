@@ -1,7 +1,10 @@
 com.utad.designpatterns
 com.utad.designpatterns.contoladores
+com.utad.designpatterns.decorator
 com.utad.designpatterns.enemigos
+com.utad.designpatterns.enemigos.estados
 com.utad.designpatterns.enemigos.estrategias
 com.utad.designpatterns.enemigos.pokemon
 com.utad.designpatterns.jugador
 com.utad.designpatterns.mundos
+com.utad.designpatterns.test

@@ -16,14 +16,15 @@ public class RaichuNivel3 extends Pokemon{
 	}
 
 	public float ataque() {
-		// TODO Auto-generated method stub
-		//return "Trueno";
-		return 0;
+		System.out.println("-- Ataque --");
+		System.out.println("Trueno");
+		return getFuerza()*this.getEstrategia().getFuerza();
 	}
 
 	public float defensa() {
-		// TODO Auto-generated method stub
-		return 0;
+		System.out.println("-- Defensa --");
+		System.out.println("Trueno Defensivo");
+		return -2;
 	}
 
 }

@@ -8,6 +8,11 @@ import com.utad.designpatterns.enemigos.pokemon.MetangNivel2;
 import com.utad.designpatterns.enemigos.pokemon.PikachuNivel2;
 import com.utad.designpatterns.enemigos.pokemon.PrinplupNivel2;
 
+/**
+ * Abstract factory nivel 2
+ * @author rodri
+ *
+ */
 public class Nivel2AbstractFactory implements TipoPokemonAbstractFactory{
 
 	public Nivel2AbstractFactory() {

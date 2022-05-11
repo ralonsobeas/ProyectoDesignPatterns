@@ -1,5 +1,10 @@
 package com.utad.designpatterns.decorator;
 
+/**
+ * Clase patrón decorador para una defensa base
+ * @author rodri
+ *
+ */
 public class DefensaBase implements AccionBaseDecorator{
 
 	private AccionDecorator accionDecorator;
@@ -13,7 +18,7 @@ public class DefensaBase implements AccionBaseDecorator{
 	}
 
 	public float getDanio() {
-		return this.accionDecorator.getDanio();
+		return -2;
 	}
 
 	public float getDefensa() {

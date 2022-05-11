@@ -16,14 +16,15 @@ public class GengarNivel3 extends Pokemon{
 	}
 
 	public float ataque() {
-		// TODO Auto-generated method stub
-		//return "Garra Umbria";
-		return 0;
+		System.out.println("-- Ataque --"); 
+		System.out.println("Garra Umbria"); 
+		return getFuerza()*this.getEstrategia().getFuerza();
 	}
 
 	public float defensa() {
-		// TODO Auto-generated method stub
-		return 0;
+		System.out.println("-- Defensa --");
+		System.out.println("Posición de defensa"); 
+		return -2;
 	}
 
 }

@@ -17,13 +17,14 @@ public class GardevoirNivel3 extends Pokemon{
 
 
 	public float ataque() {
-		// TODO Auto-generated method stub
-		//return "Beso Dulce";
-		return 0;
+		System.out.println("-- Ataque --"); 
+		System.out.println("Beso Dulce"); 
+		return getFuerza()*this.getEstrategia().getFuerza();
 	}
 
 	public float defensa() {
-		// TODO Auto-generated method stub
-		return 0;
+		System.out.println("-- Defensa --");
+		System.out.println("Beso Dulce Defensivo"); 
+		return -2;
 	}
 }

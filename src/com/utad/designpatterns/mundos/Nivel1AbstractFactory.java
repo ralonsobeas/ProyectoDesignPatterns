@@ -1,13 +1,13 @@
 package com.utad.designpatterns.mundos;
 
-import com.utad.designpatterns.enemigos.PokemonInterfaz;
-import com.utad.designpatterns.enemigos.TipoPokemonAbstractFactory;
-import com.utad.designpatterns.enemigos.pokemon.BeldumNivel1;
-import com.utad.designpatterns.enemigos.pokemon.GastlyNivel1;
-import com.utad.designpatterns.enemigos.pokemon.PichuNivel1;
-import com.utad.designpatterns.enemigos.pokemon.PiplupNivel1;
-import com.utad.designpatterns.enemigos.pokemon.RaltsNivel1;
+import com.utad.designpatterns.enemigos.*;
+import com.utad.designpatterns.enemigos.pokemon.*;
 
+/**
+ * Abstract factory para el nivel 1
+ * @author rodri
+ *
+ */
 public class Nivel1AbstractFactory implements TipoPokemonAbstractFactory{
 	
 	public Nivel1AbstractFactory() {

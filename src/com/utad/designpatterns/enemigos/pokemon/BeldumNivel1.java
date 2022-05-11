@@ -1,7 +1,7 @@
 package com.utad.designpatterns.enemigos.pokemon;
 
 import com.utad.designpatterns.enemigos.Pokemon;
-import com.utad.designpatterns.enemigos.PokemonInterfaz;
+
 import com.utad.designpatterns.mundos.Nivel;
 
 /**
@@ -16,14 +16,15 @@ public class BeldumNivel1 extends Pokemon{
 	}
 
 	public float ataque() {
-		// TODO Auto-generated method stub
-		//return "Cabezazo Zen";
-		return 0;
+		System.out.println("-- Ataque --"); 
+		System.out.println("Cabezazo Zen"); 
+		return getFuerza()*this.getEstrategia().getFuerza();
 	}
 
 	public float defensa() {
-		// TODO Auto-generated method stub
-		return 0;
+		System.out.println("-- Defensa --"); 
+		System.out.println("Defensa Zen");
+		return -2;
 	}
 
 	

@@ -2,6 +2,11 @@ package com.utad.designpatterns.decorator;
 
 import com.utad.designpatterns.enemigos.Pokemon;
 
+/**
+ * Clase que gestiona los movimientos
+ * @author rodri
+ *
+ */
 public class Movimiento implements AccionDecorator {
 
 	public Pokemon pokemon;
@@ -16,7 +21,7 @@ public class Movimiento implements AccionDecorator {
 		return null;
 	}
 	
-	public float getDaño() {
+	public float getDanio() {
 		return this.pokemon.getFuerza();
 	}
 	

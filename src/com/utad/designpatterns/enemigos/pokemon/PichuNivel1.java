@@ -15,14 +15,15 @@ public class PichuNivel1 extends Pokemon{
 	}
 
 	public float ataque() {
-		// TODO Auto-generated method stub
-		//return "Impactrueno";
-		return 0;
+		System.out.println("-- Ataque --");
+		System.out.println("Impactrueno");
+		return getFuerza()*this.getEstrategia().getFuerza();
 	}
 
 	public float defensa() {
-		// TODO Auto-generated method stub
-		return 0;
+		System.out.println("-- Defensa --");
+		System.out.println("Impactrueno Defensivo");
+		return -2;
 	}
 }
 
